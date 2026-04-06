@@ -1,19 +1,27 @@
-# Build an AI Agent from Scratch Workshop
+# Agent From Scratch
 
-## Setup Instructions
+一个基于 Bun 的极简命令行 Agent，用于演示：
 
-To run the project:
+- 对话上下文持久化
+- OpenAI 兼容模型调用
+- 基础工具调用能力
+
+## 使用
+
+先创建 `.env` 文件：
 
 ```bash
-npm start
-# or
-bun run index.ts
+OPENAI_API_KEY=your_api_key
 ```
 
-## OpenAI API Key
+安装依赖并运行：
 
-Create an [API Key from OpenAI](https://platform.openai.com/settings/organization/api-keys) and save it in a `.env` file:
+```bash
+bun install
+bun run index.ts "今天天气怎么样？"
+```
 
-```
-OPENAI_API_KEY='YOUR_API_KEY'
-```
+## 说明
+
+- 对话历史保存在 `db.json`
+- 入口文件是 `index.ts`
