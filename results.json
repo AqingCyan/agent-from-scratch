@@ -1,0 +1,36 @@
+{
+  "experiments": [
+    {
+      "name": "reddit",
+      "sets": [
+        {
+          "runs": [
+            {
+              "input": "tell me something cool from reddit",
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "reddit"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2026-04-08T12:23:02.833Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2026-04-08T12:23:02.834Z"
+        }
+      ]
+    }
+  ]
+}
